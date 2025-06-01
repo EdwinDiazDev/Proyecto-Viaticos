@@ -1,53 +1,32 @@
-# Sistema de Control de Asistencias - H. Ayuntamiento de Escuinapa
+# Sistema de Control de Viáticos - UTESC
 
-Este proyecto es una aplicación web diseñada para gestionar y registrar la asistencia diaria de los empleados del H. Ayuntamiento de Escuinapa. El sistema digitaliza el proceso de control de asistencia, eliminando la necesidad de reportes físicos y permitiendo el acceso inmediato a la información desde cualquier dispositivo autorizado.
+Este proyecto es una plataforma web desarrollada para la Universidad Tecnológica de Escuinapa (UTESC), con el propósito de gestionar eficientemente las solicitudes y autorizaciones de viáticos por parte del personal administrativo y docente. El sistema digitaliza y centraliza los procesos involucrados, mejorando la trazabilidad, la organización y la transparencia institucional.
 
-## 🧾 Características principales
+## 🧾 Descripción General
 
-- Registro de asistencias mediante dispositivo biométrico (huella digital).
-- Visualización en tiempo real de entradas y salidas.
-- Página web responsiva compatible con móviles, tablets y computadoras.
-- Panel de administración seguro para seguimiento y análisis de datos.
-- Generación automática de reportes diarios y quincenales.
-- Sistema de autenticación con credenciales para usuarios autorizados.
-- Diseño institucional con identidad visual del Ayuntamiento (colores tinto y morado).
-- Integración con base de datos para almacenamiento eficiente de registros.
+El sistema permite a los usuarios enviar solicitudes de viáticos mediante formularios detallados, los cuales son procesados y almacenados de manera segura. La plataforma integra funcionalidades para:
 
-## 🛠️ Tecnologías utilizadas
+- Registro y envío de solicitudes de viáticos.
+- Revisión, aprobación y autorización de las solicitudes por usuarios con permisos específicos.
+- Historial completo de cada solicitud para auditoría y control.
+- Acceso controlado mediante roles: solicitante, revisor, y administrador.
 
-- HTML
-- CSS
-- JavaScript
-- PHP
-- MySQL
+## 🚀 Características Principales
 
-## 🔁 Metodología
+- Formulario web extensivo para capturar toda la información necesaria del viaje.
+- Flujo de aprobación por niveles: solicitud → revisión → autorización.
+- Control de estado de solicitudes (pendiente, aprobado, rechazado, autorizado, cancelado).
+- Almacenamiento seguro y persistente de información con base de datos MySQL.
+- Interfaz clara y accesible desde distintos dispositivos (responsive design).
+- Seguridad de acceso mediante autenticación por roles.
 
-Se utilizó la metodología ágil **SCRUM**, permitiendo una gestión iterativa y flexible del proyecto. Se priorizó la entrega temprana de valor, la adaptación continua y la colaboración cercana con los usuarios finales.
+## 🛠️ Tecnologías Utilizadas
 
-## 🎯 Objetivo SMART
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** PHP  
+- **Base de Datos:** MySQL  
+- **Diseño Responsive:** CSS3 y media queries  
 
-Implementar un sistema digital de registro de asistencia en el H. Ayuntamiento de Escuinapa para el 30% de los empleados, con informes accesibles desde la red municipal, en un plazo de tres meses. Esto reducirá la dependencia de reportes físicos, aumentando la eficiencia y sostenibilidad administrativa.
+## 🎯 Objetivo
 
-## 📌 Requisitos clave
-
-- Conectividad con checador biométrico existente.
-- Interfaz intuitiva y de fácil uso.
-- Seguridad en el acceso y protección de los datos.
-- Capacidad para escalar el sistema en futuras fases.
-
-## 📂 Estructura esperada
-
-- `/admin`: Panel de control y generación de informes.
-- `/registro`: Punto de integración con el checador biométrico.
-- `/assets`: Recursos estáticos como hojas de estilo e imágenes.
-- `/db`: Scripts para la creación y conexión a la base de datos.
-
-## ✅ Entregables
-
-- Plataforma web funcional y responsiva.
-- Conexión operativa con el checador de huellas.
-- Panel administrativo con reportes exportables.
-- Base de datos implementada y segura.
-- Identidad visual del Ayuntamiento reflejada en el sistema.
-
+Desarrollar un sistema web que permita digitalizar el proceso de solicitud y autorización de viáticos, reduciendo el uso de papel, agilizando los tiempos de respuesta y mejorando el control administrativo dentro de la UTESC.
