@@ -1,0 +1,452 @@
+/* Estilos para el encabezado del formulario */
+.header_form {
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 30px;
+}
+
+/* Estilos para la información del formulario */
+.txt_info_form {
+  text-align: end;
+  margin-right: 23%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Estilos para el pie de página del formulario */
+.fooder_form {
+  margin: 30px;
+  text-align: justify;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Estilos para el botón de guardar del formulario */
+.btn_guardar_form {
+  text-align: center;
+}
+
+.boton-guardar {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.boton-guardar:hover {
+  background-color: #45a049;
+}
+
+/* Espaciado entre elementos del pie de página */
+.fooder_form > *+* {
+  margin-top: 30px;
+}
+
+/* Estilos para la disposición de campos */
+.form-half-15, .form-half-25, .form-half-50, .form-half-75, .form-half-100 {
+  padding-right: 10px;
+}
+
+.form-half-10 {
+  width: 10%;
+}
+
+.form-half-15 {
+  width: 15%;
+}
+
+.form-half-25 {
+  width: 25%;
+}
+
+.form-half-50 {
+  width: 50%;
+}
+
+.form-half-75 {
+  width: 75%;
+}
+
+.form-half-100 {
+  width: 100%;
+}
+
+/* Estilos generales para el título del formulario */
+.title_form {
+  padding: 30px;
+  text-align: center;
+}
+
+.title_form h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Estilos para la disposición de campos en el formulario */
+.form-flex {
+   display: flex;
+  justify-content: space-between; /* Ajusta el espacio entre los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilos comunes para etiquetas de campos */
+.styled-form label {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Estilo para los campos de detalles (campos que vera el admin) */
+.styled-form .details {
+  background-color: #bab8b8;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d7d5d5;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.styled-form .details_textarea{
+  background-color: #bab8b8;
+  width: 100%;
+  padding: 60px;
+  border: 1px solid #d7d5d5;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+/* Estilos comunes para campos de entrada, select y textarea */
+.styled-form input[type="text"],
+.styled-form input[type="email"],
+.styled-form input[type="password"],
+.styled-form input[type="number"],
+.styled-form input[type="date"],
+.styled-form input[type="time"],
+.styled-form input[type="tel"],
+.styled-form select,
+.styled-form textarea {
+  background-color: #DEDEDE;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+
+
+.styled-form input[type="text"]:focus,
+.styled-form input[type="email"]:focus,
+.styled-form input[type="password"]:focus,
+.styled-form input[type="date"]:focus,
+.styled-form input[type="number"]:focus,
+.styled-form input[type="time"]:focus,
+.styled-form input[type="tel"]:focus,
+.styled-form select:focus,
+.styled-form textarea:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Estilos para grupos de radio en el formulario */
+.styled-form .radio-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.styled-form .radio-group input[type="radio"] {
+  display: none; /* Ocultar los input originales */
+}
+
+.styled-form .radio-group label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.styled-form .radio-group label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.styled-form .radio-group input[type="radio"]:checked + label::before {
+  background-color: #192734; /* Cambiar el color al seleccionar */
+}
+
+.styled-form .radio-group label:hover::before {
+  border-color: #4CAF50; /* Cambiar el color del borde al pasar el ratón */
+}
+
+/* Estilos para el botón de envío en el formulario */
+.styled-form .btn_submit {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.styled-form .botons {
+  background-color: #192734;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.styled-form .botons:hover {
+  background-color: #00AEC6;
+}
+
+/* Estilos para el formulario general */
+.formulario {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #278b80;
+  border: 1px solid #192734;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  color: #192734;
+}
+
+/* Estilos para el formulario de viáticos */
+.formulario_viaticos {
+  max-width: 98%;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #278b80;
+  border: 1px solid #192734;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  color: #192734;
+}
+
+/* Estilos para grupos de campos en el formulario de viáticos */
+.form-group-viaticos {
+  border: 2px solid #192734;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* Estilos para encabezados de sección */
+.content_text {
+  border: 1px solid #fff;
+  margin: 10px 0 30px 0;
+}
+
+/* Estilos para alinear texto en el centro */
+.text_center {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Estilos para botones en el formulario de comitiva */
+#agregar-campos-comitiva {
+  background-color: #192734;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#agregar-campos-comitiva:hover {
+  background-color: #00AEC6;
+}
+
+/* Estilos para botones de eliminar comitiva */
+#eliminar-campos-comitiva {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 25px;
+}
+
+/* Estilos para botones de agregar itinerario */
+#agregar-campos-itinerario {
+  background-color: #192734;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#agregar-campos-itinerario:hover {
+  background-color: #00AEC6;
+}
+
+/* Estilos para botones de eliminar comitiva */
+#eliminar-campos-comitiva {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 25px;
+}
+
+/* Estilos para botones de eliminar itinerario */
+#eliminar-campos-itinerario {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#eliminar-campos-itinerario-down {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 47px;
+}
+
+/* Estilos para la sección de itinerario */
+.content_itinerario {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  overflow-x: auto; /* Agrega barra de desplazamiento horizontal */
+  max-width: 100%; /* Limita el ancho al 100% del contenedor principal */
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+text-align: center;
+overflow-x: auto;
+color: #fff;
+}
+
+th, td {
+border: 1px solid #6e6969;
+text-align: left;
+white-space: nowrap;
+}
+
+
+th {
+padding: 12px; /* Reducir el padding para ajustar el contenido */
+background-color: #192734;
+font-size: 13px; /* Tamaño de fuente más pequeño */
+}
+
+/* Estilo para inputs de tipo "number" */
+input[type="number"] {
+  width: calc(90% - 10px);
+  padding: 10px; /* Ajusta el valor según sea necesario */
+  margin: 4px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid;
+  resize: none;
+}
+
+/* Estilo para inputs de tipo "date" */
+input[type="date"] {
+  width: calc(90% - 10px);
+  padding: 10px; /* Ajusta el valor según sea necesario */
+  margin: 4px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 1px solid;
+  resize: none;
+}
+
+  .content_btn {
+    padding: 30px 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-accept,
+  .btn-refused,
+  .btn-correction {
+    width: 120px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px 8px; /* Ajusta el margen aquí */
+  }
+
+  .btn-accept-color {
+    background-color: #4caf50; /* Verde */
+  }
+
+  .btn-refused-color {
+    background-color: #f44336; /* Rojo */
+  }
+
+  .btn-correction-color {
+    background-color: #2196f3; /* Azul */
+  }
+
+  .btn-accept p,
+  .btn-refused p,
+  .btn-correction p {
+    color: #fff;
+    text-align: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #result-message {
+    background-color: #4caf50; /* Verde */
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .btn-selected {
+    /* Estilos para el botón seleccionado */
+    border: 2px solid #fff;
+  }
